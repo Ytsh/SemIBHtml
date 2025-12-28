@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /* to give color, rgb, hex, hsl */
+        .initialDesign{
+            background-color: rgb(127, 132, 143,  0.9) !important;
+            background-color: #03164c !important;
+            color: white;
+            /* border: 1px solid rgb(253, 78, 78); */
+            /* border-left: 6px solid rgb(253, 78, 78); */
+            /* border-radius: 10px; */
+            border-top-width: medium;
+            border-top-style: groove;
+            border-top-color: greenyellow;
+            /* Margin is space between two elements. 
+            If I give margin to the current element then,
+            it will keep it's distance from the other elements.
+            */
+            margin: 100px;
+            margin: 10px 20px; /* top-buttom left-right */
+            margin: 10px 20px 30px 40px; /* top right buttom left */
+            /* margin-top: 40px; */
+            padding: 10px;
+            padding: 10px 20px; /* top-buttom left-right */
+            padding: 10px 20px 30px 40px; /* top right buttom left */
+            border-radius: 50px;
+
+        }
+        .forbgimg{
+            background-image: url(Sunset.jpg);
+            height: 200px;
+            width: 200px;
+            background-size : cover;
+            /* background-repeat: repeat-y; */
+        }
+        .button{
+            /* display: inline-block; */
+            /* display: inline; */
+            background-color: rgb(103, 103, 253);
+            border-radius: 50px;
+            color:rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px 7px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+        .button:hover{
+            background-color: rgb(34, 34, 255);
+            transform: scale(1.1);
+        }
+        .flex{
+            display:flex;
+            /* flex-wrap: wrap; */
+
+            flex-direction: column;
+            /* justify-content: space-between; */
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <div class="flex">
+        <a class="button" href="index.html">Home Page</a>
+        <a class="button" href="index.html">Home Page</a>
+        <a class="button" href="index.html">Home Page</a>
+        <a class="button" href="index.html">Home Page</a>
+        
+    </div>
+    <br><br>
+    <h1>About Us</h1>
+    <p class="initialDesign"> I'm writing css for this p tag. </p>
+    <div class="forbgimg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum aperiam rerum ullam quam, eius corporis voluptatum exercitationem. Aliquam rem sunt fuga eos quod deserunt molestiae nam commodi suscipit asperiores.</div>
+    <!-- 
+    display: block -> eg p, h1, h2, div, header, footer
+        - by default takes 100% of available width.
+        - starts on a new line.
+        we can set width, height, margin, padding
+
+    display: inline -> em,i,strong, span, a.
+        - takes only the content width
+        - does not start on a new line.
+        - width and height is ignored.
+        - vertical margin doesnt work.
+        - padding works (top/buttom is weird)
+    
+    display: inline-block;
+        - combination of inline + block.
+        - stays inline.
+        - Can set: height, width, margin, padding
+
+    display: none; -> sabai gayab huncha. kei dekhinna.
+
+    display: flex; -> it gives me flexible container.
+        -Turns an element into a flex container.
+        -Children becomes flex items.
+        Default behavior:
+            - flex-direction: row;
+            - justify-content: flex-start;
+            - align-items: stretch;
+
+        flex-direction: row|column;
+        justify-content: flex-start|center|space-between|space-around;
+        align-items: stretch|center|flex-start|flex-end;
+
+        flex-wrap: nowrap| wrap
+
+        Note: It handles 1D styling
+    
+    -->
+
+</body>
+</html>

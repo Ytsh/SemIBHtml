@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* color: red; */
+        body{
+            color:red;
+        }
+        .className{
+            color:blueviolet;
+        }
+        #idName{
+            color:yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <p style="color:red;" >Welcome</p>
+    <p class="className">Welcome again</p>
+    <p id="idName">Welcome again again</p>
+
+    <!-- foldername/go to thatfolder/filename -->
+     <!-- ../fildername/filename -->
+      <a href="#divSection">Go to div section</a>
+    <a href="about.html">About Page</a>
+    <h1>Welcome to HTML class</h1>
+    <h2>This is h2</h2>
+    <h3>THis is h3</h3>
+    <h4>This is h4</h4>
+    <h5>This is h5</h5>
+    <h6>This is h6</h6>
+    <p>This is a paragraph written inside a p tag.</p>
+    <span>a message in a span</span>
+    <strong>This bolds a text</strong>
+    <b>This also bolds a text</b>
+    <em>Hello Italic</em>
+    <i>Hola Italic</i>
+    <u>How about underline</u>
+    <mark>Highlight please</mark>
+    <small>Make me smaller</small>
+    <br>
+    <hr>
+    <code>Code formatting style</code>
+
+    <!-- two type of list. Ordered list -> 1,2,3, unordered list, dot,dot,dot -->
+    <!-- comment, ctrl + /  -->
+    <ol>
+        <li>First list</li>
+        <li>Second list</li>
+        <li>Thrid list</li>
+    </ol>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Peach</li>
+    </ul>
+    <div id="divSection">This is div section</div>
+    <!-- Link -->
+    <a href="https://www.google.com/"> Visit Google </a>
+    <img src="https://th.bing.com/th/id/R.195fcd8a7a2171e72cfb09df8c82204a?rik=JEnEi2nNfwf5sA&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fsunset-beach-cp.jpg&ehk=6yg0sCNVC4Q2s8xrrgXZ5XIvJLpmkRc1eEBq%2bAk%2fUPE%3d&risl=&pid=ImgRaw&r=0" alt="Description of image, sunset "
+        height="200" width="200"
+    >
+    <br>
+    <img src="Sunset.jpg" alt="sunset" height="100" width="200">
+
+    <!-- table tag, thead, tbody, tr th td -->
+     <table border="2px">
+        <tr>
+            <th>SN.</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ben</td>
+            <td>18</td>
+        </tr>
+
+    </table>
+<!-- colspan row span -->
+    <table border="1">
+        <tr>
+            <th colspan="3">Information of Student</th>
+        </tr>
+        <tr>
+            <th>SN.</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ben</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th rowspan="2">Country</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Kathmandu</td>
+        </tr>
+    </table>
+    <br>
+    <!-- input type=number, textarea, select(dropdown), all this to be inside form -->
+     <form action="">
+        <label for="fullname">Full Name: </label>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter you full name" value="Rajesh Khanal">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="datetime-local">Date Time: </label>
+        <input type="datetime-local" name="datetime-local" id="datetime-local">
+        <br>
+        <label for="date">Date: </label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="file">Upload file: </label>
+        <input type="file" name="file" id="file">
+        <br>
+        <label for="cbox">Choose fruits:</label>
+        <input type="checkbox" name="fruits" id="mango" value="mango">Mango
+        <input type="checkbox" name="fruits" id="apple" value="apple">Apple
+        <input type="checkbox" name="fruits" id="banana" value="banana">Banana
+        <input type="checkbox" name="fruits" id="orange" value="orange">Orange
+
+        <br>
+        <label for="gender">Choose your gender</label>
+        <input type="radio" name="gender" id="male" value="male">Male
+        <input type="radio" name="gender" id="female" value="female">Female
+
+        <select name="country" id="country">
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+        </select>
+        <select name="cars" id="car">
+            <optgroup label="electric">
+                <option value="tesla">Tesla</option>
+                <option value="byd">BYD</option>
+            </optgroup>
+            <optgroup label="petrol">
+                <option value="toyota">Toyota</option>
+                <option value="kia">Kia</option>
+            </optgroup>
+        </select>
+     </form>
+
+     <!-- 
+        id, class -> I can assign them to any tags
+        id -> unique. I use # selector for this.
+        class -> you can have many tag assigned to same class or vice versa 
+        we use . as selector for this.
+     -->
+     <!-- some remaining tags -> span - text lekhna lai ho  button
+     div -> non-semantic tags
+     header, footer, aside, main, nav, section, - semantic tag
+
+     but all the above tags including div are the same.
+     Semantic tags -> naam padhera bujhine tags,
+      SEO ko good rating paucha if you use semantic tags.
+
+      display:block // css ho, 
+      width 100% lincha ani aru koi sanga share gardaina
+
+    CSS -> Cascade style sheet -> It is used for styling
+    selector -> property -> value
+    We can apply css in three different ways -> inline css, internal css, external css
+
+    color: red;
+    eg.
+    <p style="color:red;" >Welcome</p>
+
+    internal css -> head tag bhitra ma style tag banauchu ra tesmai sabai css lekhchu
+
+    for selector -> eeuta tag, kunai class, kunai id, for each and every tag in webpage,
+    eg,  body{color:red;}, .className{color:red;}, #idName{color:red;}
+
+
+
+
+     -->
+
+     <div>Hello from div</div>
+
+
+</body>
+</html>
+
+
+<!-- 
+HTML is made up of/ consists tags.
+<html>
+    <tag_name>
+
+<html>
+    </html>
+
+html tag
+-head - external requirement/ css/ import haru garincha
+        - title; tag ko side ma bhako naam ra icon, eg. script, style
+-body - This consists everything that user sees. We write alll the code here
+ h1 dekhi h6 samma header tags
+
+
+-->
